@@ -12,12 +12,13 @@
 		31B99B0CA384370B5E7AB861 /* Pods_iOSMonitor_iOSMonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B422603FB431A75621406CA /* Pods_iOSMonitor_iOSMonitorUITests.framework */; };
 		631954E224D0D97900660D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631954E124D0D97900660D92 /* AppDelegate.swift */; };
 		631954E424D0D97900660D92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631954E324D0D97900660D92 /* SceneDelegate.swift */; };
-		631954E624D0D97900660D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631954E524D0D97900660D92 /* ViewController.swift */; };
+		631954E624D0D97900660D92 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631954E524D0D97900660D92 /* MainVC.swift */; };
 		631954E924D0D97900660D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631954E724D0D97900660D92 /* Main.storyboard */; };
 		631954EB24D0D97A00660D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631954EA24D0D97A00660D92 /* Assets.xcassets */; };
 		631954EE24D0D97A00660D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631954EC24D0D97A00660D92 /* LaunchScreen.storyboard */; };
 		631954F924D0D97A00660D92 /* iOSMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631954F824D0D97A00660D92 /* iOSMonitorTests.swift */; };
 		6319550424D0D97A00660D92 /* iOSMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6319550324D0D97A00660D92 /* iOSMonitorUITests.swift */; };
+		6319551224D0E4F400660D92 /* CPUMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6319551124D0E4F400660D92 /* CPUMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,7 @@
 		631954DE24D0D97900660D92 /* iOSMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		631954E124D0D97900660D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		631954E324D0D97900660D92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		631954E524D0D97900660D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		631954E524D0D97900660D92 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		631954E824D0D97900660D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		631954EA24D0D97A00660D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		631954ED24D0D97A00660D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		631954FF24D0D97A00660D92 /* iOSMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6319550324D0D97A00660D92 /* iOSMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMonitorUITests.swift; sourceTree = "<group>"; };
 		6319550524D0D97A00660D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6319551124D0E4F400660D92 /* CPUMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUMonitor.swift; sourceTree = "<group>"; };
 		9D9AF9BAA1DFF59FD418E11E /* Pods_iOSMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C603BA3752CEEBD450434807 /* Pods-iOSMonitor-iOSMonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMonitor-iOSMonitorUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSMonitor-iOSMonitorUITests/Pods-iOSMonitor-iOSMonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4600487FE893B36E435AC17 /* Pods_iOSMonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,11 +120,12 @@
 			children = (
 				631954E124D0D97900660D92 /* AppDelegate.swift */,
 				631954E324D0D97900660D92 /* SceneDelegate.swift */,
-				631954E524D0D97900660D92 /* ViewController.swift */,
+				631954E524D0D97900660D92 /* MainVC.swift */,
 				631954E724D0D97900660D92 /* Main.storyboard */,
 				631954EA24D0D97A00660D92 /* Assets.xcassets */,
 				631954EC24D0D97A00660D92 /* LaunchScreen.storyboard */,
 				631954EF24D0D97A00660D92 /* Info.plist */,
+				6319551124D0E4F400660D92 /* CPUMonitor.swift */,
 			);
 			path = iOSMonitor;
 			sourceTree = "<group>";
@@ -165,7 +168,6 @@
 				11836D43FB4AA11028B4D69B /* Pods-iOSMonitorTests.debug.xcconfig */,
 				2EA18BB5932D0BA8FE922A82 /* Pods-iOSMonitorTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -372,9 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				631954E624D0D97900660D92 /* ViewController.swift in Sources */,
+				631954E624D0D97900660D92 /* MainVC.swift in Sources */,
 				631954E224D0D97900660D92 /* AppDelegate.swift in Sources */,
 				631954E424D0D97900660D92 /* SceneDelegate.swift in Sources */,
+				6319551224D0E4F400660D92 /* CPUMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
