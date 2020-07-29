@@ -188,6 +188,7 @@
 				631954DA24D0D97900660D92 /* Sources */,
 				631954DB24D0D97900660D92 /* Frameworks */,
 				631954DC24D0D97900660D92 /* Resources */,
+				36E5A95EAC891E2F2A98310B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +226,7 @@
 				631954FB24D0D97A00660D92 /* Sources */,
 				631954FC24D0D97A00660D92 /* Frameworks */,
 				631954FD24D0D97A00660D92 /* Resources */,
+				313C161CB9AD4F588BBA0BD1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,6 +309,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		313C161CB9AD4F588BBA0BD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMonitor-iOSMonitorUITests/Pods-iOSMonitor-iOSMonitorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMonitor-iOSMonitorUITests/Pods-iOSMonitor-iOSMonitorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSMonitor-iOSMonitorUITests/Pods-iOSMonitor-iOSMonitorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36E5A95EAC891E2F2A98310B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMonitor/Pods-iOSMonitor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSMonitor/Pods-iOSMonitor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSMonitor/Pods-iOSMonitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7B160B16177A991CEBAD3E0A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

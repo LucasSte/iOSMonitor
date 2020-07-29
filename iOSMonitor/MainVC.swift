@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import GPUUtilization
 
 class MainVC: UIViewController {
     let cpuMonitor = CpuMonitor()
@@ -22,6 +23,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var wifiRec: UILabel!
     @IBOutlet weak var cellSent : UILabel!
     @IBOutlet weak var cellRec: UILabel!
+    @IBOutlet weak var gpuUsage : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +55,7 @@ class MainVC: UIViewController {
                     self.wifiRec.text = self.networkInfo.wifiReceived.description
                     self.cellRec.text = self.networkInfo.wirelessWanDataReceived.description
                     self.cellSent.text = self.networkInfo.wirelessWanDataSent.description
+                    self.gpuUsage.text = String(format: "%.2f", GPUUtilization.gpuUsage)
                 }
                 sleep(1)
             }
