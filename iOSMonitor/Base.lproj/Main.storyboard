@@ -63,14 +63,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaJ-Ah-21m">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="TrE-DG-Qpj"/>
-                                    <tabBarItem systemItem="more" id="31x-0L-yR2"/>
-                                </items>
-                            </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wi-Fi sent packages:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQd-Ja-zSJ">
                                 <rect key="frame" x="16" y="287" width="161" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -164,7 +156,6 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="yaJ-Ah-21m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="00C-2O-zCW"/>
                             <constraint firstItem="CAv-c1-cU3" firstAttribute="leading" secondItem="xqE-vy-fAS" secondAttribute="trailing" constant="37" id="0Pu-Kv-6au"/>
                             <constraint firstItem="Cto-n8-PMk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0xT-AS-wcf"/>
                             <constraint firstItem="BL0-Pf-QmX" firstAttribute="top" secondItem="58B-qg-NnK" secondAttribute="bottom" constant="8" id="2AC-en-bZ4"/>
@@ -184,7 +175,6 @@
                             <constraint firstItem="p0x-Ke-o99" firstAttribute="leading" secondItem="TWz-r9-eSb" secondAttribute="trailing" constant="5" id="JN7-OD-beC"/>
                             <constraint firstItem="CAv-c1-cU3" firstAttribute="top" secondItem="BL0-Pf-QmX" secondAttribute="bottom" constant="8" id="KOf-Do-fGK"/>
                             <constraint firstItem="xqE-vy-fAS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MJP-h0-JqH"/>
-                            <constraint firstItem="yaJ-Ah-21m" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Oq8-Pq-dzA"/>
                             <constraint firstItem="8Uv-s4-p2I" firstAttribute="top" secondItem="FQd-Ja-zSJ" secondAttribute="bottom" constant="8" id="P1v-LH-LmX"/>
                             <constraint firstItem="s5H-sF-ejg" firstAttribute="leading" secondItem="FQd-Ja-zSJ" secondAttribute="trailing" constant="22" id="PkT-wc-9HU"/>
                             <constraint firstItem="Cto-n8-PMk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qsg-2T-YkH"/>
@@ -199,7 +189,6 @@
                             <constraint firstItem="0rW-jJ-Owm" firstAttribute="top" secondItem="s5H-sF-ejg" secondAttribute="bottom" constant="8" id="dsW-nq-gkJ"/>
                             <constraint firstItem="yrB-J0-geD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eyt-9Q-NAW"/>
                             <constraint firstItem="70g-JE-bR4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="f3V-p4-WuS"/>
-                            <constraint firstItem="yaJ-Ah-21m" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fyS-hT-U4n"/>
                             <constraint firstItem="s5H-sF-ejg" firstAttribute="top" secondItem="zPD-Jj-ai0" secondAttribute="bottom" constant="8" id="gjx-vn-vpf"/>
                             <constraint firstItem="Gri-en-tGX" firstAttribute="leading" secondItem="c9W-Ub-IZf" secondAttribute="trailing" constant="40" id="ha9-Ve-vfk"/>
                             <constraint firstItem="s0u-Jx-bGK" firstAttribute="leading" secondItem="dHd-Do-qOT" secondAttribute="trailing" constant="27" id="hyG-fD-jbU"/>
