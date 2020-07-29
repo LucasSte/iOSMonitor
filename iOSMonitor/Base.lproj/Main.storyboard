@@ -15,31 +15,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cto-n8-PMk">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cto-n8-PMk">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="iOSMonitor" id="sma-Tq-QMV"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cpu usage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-Ub-IZf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cpu usage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-Ub-IZf">
                                 <rect key="frame" x="16" y="72" width="87" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gri-en-tGX">
-                                <rect key="frame" x="143" y="72" width="210" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Core0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gri-en-tGX">
+                                <rect key="frame" x="143" y="72" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Memory (GB):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mt-Uw-bIY">
+                                <rect key="frame" x="16" y="185" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1h-HB-65b">
+                                <rect key="frame" x="186" y="185" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0u-Jx-bGK">
+                                <rect key="frame" x="186" y="223" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Used Memory (%):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHd-Do-qOT">
+                                <rect key="frame" x="16" y="223" width="143" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cto-n8-PMk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0xT-AS-wcf"/>
+                            <constraint firstItem="Cto-n8-PMk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6xr-pT-3uy"/>
+                            <constraint firstItem="c9W-Ub-IZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7is-8j-fQ3"/>
+                            <constraint firstItem="d1h-HB-65b" firstAttribute="top" secondItem="Cto-n8-PMk" secondAttribute="bottom" constant="141" id="HDz-Gq-YYv"/>
+                            <constraint firstItem="Cto-n8-PMk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qsg-2T-YkH"/>
+                            <constraint firstItem="dHd-Do-qOT" firstAttribute="top" secondItem="3mt-Uw-bIY" secondAttribute="bottom" constant="17" id="R00-oQ-Erl"/>
+                            <constraint firstItem="3mt-Uw-bIY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WKb-GY-B3S"/>
+                            <constraint firstItem="Gri-en-tGX" firstAttribute="top" secondItem="Cto-n8-PMk" secondAttribute="bottom" constant="28" id="Wxx-74-J0p"/>
+                            <constraint firstItem="3mt-Uw-bIY" firstAttribute="top" secondItem="c9W-Ub-IZf" secondAttribute="bottom" constant="92" id="Y8f-En-k2Y"/>
+                            <constraint firstItem="c9W-Ub-IZf" firstAttribute="top" secondItem="Cto-n8-PMk" secondAttribute="bottom" constant="28" id="Zon-DP-CGS"/>
+                            <constraint firstItem="Gri-en-tGX" firstAttribute="leading" secondItem="c9W-Ub-IZf" secondAttribute="trailing" constant="40" id="ha9-Ve-vfk"/>
+                            <constraint firstItem="s0u-Jx-bGK" firstAttribute="leading" secondItem="dHd-Do-qOT" secondAttribute="trailing" constant="27" id="hyG-fD-jbU"/>
+                            <constraint firstItem="s0u-Jx-bGK" firstAttribute="top" secondItem="d1h-HB-65b" secondAttribute="bottom" constant="17" id="j2A-nx-iWD"/>
+                            <constraint firstItem="d1h-HB-65b" firstAttribute="leading" secondItem="3mt-Uw-bIY" secondAttribute="trailing" constant="21" id="jSq-gD-gMA"/>
+                            <constraint firstItem="dHd-Do-qOT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ndy-EA-xlP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gri-en-tGX" secondAttribute="trailing" constant="29" id="sex-NP-nmP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="coreUsage" destination="Gri-en-tGX" id="lK8-Zr-RAI"/>
+                        <outlet property="totalMem" destination="d1h-HB-65b" id="bXN-Pu-41k"/>
+                        <outlet property="usedMem" destination="s0u-Jx-bGK" id="Roc-Gd-xSa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

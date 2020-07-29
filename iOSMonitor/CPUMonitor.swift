@@ -33,7 +33,7 @@ class CpuMonitor {
         }
     }
 
-    @objc func updateInfo(_ timer: Timer, action : ([Float]) -> Void) {
+    @objc func updateInfo(_ timer: Timer) {
         var numCPUsU: natural_t = 0
         let err: kern_return_t = host_processor_info(mach_host_self(), PROCESSOR_CPU_LOAD_INFO, &numCPUsU, &cpuInfo, &numCpuInfo);
         if err == KERN_SUCCESS {
@@ -60,7 +60,7 @@ class CpuMonitor {
 
                 self.coreUsage[Int(i)] = Float(inUse) / Float(total) * 100
                 //print(String(format: "Core: %u Usage: %f", i, Float(inUse) / Float(total)))
-                print(self.coreUsage.count)
+                //print(self.coreUsage.count)
             }
             
             CPUUsageLock.unlock()

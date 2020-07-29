@@ -10,22 +10,38 @@ import UIKit
 
 class MainVC: UIViewController {
     let cpuMonitor = CpuMonitor()
-    weak var coreUsage : UITextView!
+    let memMonitor = MemoryMonitor()
+    @IBOutlet weak var coreUsage : UILabel!
+    @IBOutlet weak var totalMem : UILabel!
+    @IBOutlet weak var usedMem : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.cpuMonitor.updateInfo(self.cpuMonitor.updateTimer, action: changeText(usage:))
+        self.cpuMonitor.updateInfo(self.cpuMonitor.updateTimer)
+        changeText()
     }
     
-    func changeText(usage : [Float])
+    func changeText()
     {
-        var text : String = ""
-        for i in 0 ..< usage.count {
-            text = text + "Core " + i.description + ": " + String(format: ".2%f", usage[i]) + "\n"
+        self.coreUsage.numberOfLines = Int(self.cpuMonitor.numCPUs) + 1
+        self.totalMem.text = String(format: "%.2f", self.memMonitor.totalMemory() / 1073741824)
+        DispatchQueue.global(qos: .background).async {
+            while(true)
+            {
+                    var text : String = ""
+                    for i in 0 ..< self.cpuMonitor.numCPUs
+                    {
+                        text = text + "Core " + i.description + ": " + String(format: "%.2f",self.cpuMonitor.coreUsage[Int(i)]) + "%\n"
+                    }
+                    DispatchQueue.main.async {
+                        self.coreUsage.text = text
+                        self.usedMem.text = String(format: "%.2f", self.memMonitor.usedMemory()! / self.memMonitor.totalMemory() * 100)
+                    }
+                    sleep(1)
+            }
+            
         }
-        DispatchQueue.main.async {
-            self.coreUsage.text = text
-        }
+        
     }
     
 
