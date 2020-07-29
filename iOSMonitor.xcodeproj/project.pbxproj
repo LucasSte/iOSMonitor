@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		6319551224D0E4F400660D92 /* CPUMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6319551124D0E4F400660D92 /* CPUMonitor.swift */; };
 		6392AF5B24D1A705000D71D1 /* MemoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392AF5A24D1A705000D71D1 /* MemoryMonitor.swift */; };
 		6392AF5F24D1BABA000D71D1 /* NetworkUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392AF5E24D1BABA000D71D1 /* NetworkUsage.swift */; };
+		6392AF6524D1DF84000D71D1 /* StorageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6392AF6424D1DF84000D71D1 /* StorageInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		6319551124D0E4F400660D92 /* CPUMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUMonitor.swift; sourceTree = "<group>"; };
 		6392AF5A24D1A705000D71D1 /* MemoryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryMonitor.swift; sourceTree = "<group>"; };
 		6392AF5E24D1BABA000D71D1 /* NetworkUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUsage.swift; sourceTree = "<group>"; };
+		6392AF6424D1DF84000D71D1 /* StorageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageInfo.swift; sourceTree = "<group>"; };
 		9D9AF9BAA1DFF59FD418E11E /* Pods_iOSMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C603BA3752CEEBD450434807 /* Pods-iOSMonitor-iOSMonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSMonitor-iOSMonitorUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOSMonitor-iOSMonitorUITests/Pods-iOSMonitor-iOSMonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4600487FE893B36E435AC17 /* Pods_iOSMonitorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSMonitorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 				6319551124D0E4F400660D92 /* CPUMonitor.swift */,
 				6392AF5A24D1A705000D71D1 /* MemoryMonitor.swift */,
 				6392AF5E24D1BABA000D71D1 /* NetworkUsage.swift */,
+				6392AF6424D1DF84000D71D1 /* StorageInfo.swift */,
 			);
 			path = iOSMonitor;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6392AF5F24D1BABA000D71D1 /* NetworkUsage.swift in Sources */,
+				6392AF6524D1DF84000D71D1 /* StorageInfo.swift in Sources */,
 				631954E624D0D97900660D92 /* MainVC.swift in Sources */,
 				631954E224D0D97900660D92 /* AppDelegate.swift in Sources */,
 				631954E424D0D97900660D92 /* SceneDelegate.swift in Sources */,

@@ -25,11 +25,13 @@ class MainVC: UIViewController {
     @IBOutlet weak var cellRec: UILabel!
     @IBOutlet weak var gpuUsage : UILabel!
     
+    @IBOutlet weak var totalSpace : UILabel!
+    @IBOutlet weak var freeSpace : UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.cpuMonitor.updateInfo(self.cpuMonitor.updateTimer)
         changeText()
-
     }
     
     func changeText()
@@ -39,6 +41,17 @@ class MainVC: UIViewController {
         self.execPath.lineBreakMode = NSLineBreakMode.byCharWrapping
         self.execPath.numberOfLines = 0
         self.execPath.text = Bundle.main.executablePath!
+        if let totalSpaceInBytes = FileManagerUility.getFileSize(for: .systemSize) {
+            let totalSpaceInGB = FileManagerUility.convert(totalSpaceInBytes)
+            self.totalSpace.text = totalSpaceInGB!
+            
+            if let freeSpaceInBytes = FileManagerUility.getFileSize(for: .systemFreeSize) {
+                let freePercentage = Double(freeSpaceInBytes) / Double(totalSpaceInBytes) * 100
+                self.freeSpace.text = String(format: "%.2f", freePercentage)
+            }
+            
+        }
+        
         DispatchQueue.global(qos: .background).async {
             while(true)
             {
