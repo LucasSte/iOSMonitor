@@ -14,6 +14,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var coreUsage : UILabel!
     @IBOutlet weak var totalMem : UILabel!
     @IBOutlet weak var usedMem : UILabel!
+    @IBOutlet weak var execPath : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,9 @@ class MainVC: UIViewController {
     {
         self.coreUsage.numberOfLines = Int(self.cpuMonitor.numCPUs) + 1
         self.totalMem.text = String(format: "%.2f", self.memMonitor.totalMemory() / 1073741824)
+        self.execPath.lineBreakMode = NSLineBreakMode.byCharWrapping
+        self.execPath.numberOfLines = 0
+        self.execPath.text = Bundle.main.executablePath!
         DispatchQueue.global(qos: .background).async {
             while(true)
             {
