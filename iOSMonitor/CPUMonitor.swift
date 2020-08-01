@@ -24,7 +24,7 @@ class CpuMonitor {
             if status != 0 {
                 numCPUs = 1
             }
-            updateTimer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(updateInfo), userInfo: nil, repeats: true)
+            updateTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateInfo), userInfo: nil, repeats: true)
             
             for _ in 0 ..< Int32(numCPUs)
             {
